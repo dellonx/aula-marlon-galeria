@@ -23,7 +23,6 @@ nav {
     transition: all 0.3s;
 }
 
-
 .link:hover {
     transform: scale(1.2);
 }
@@ -32,28 +31,49 @@ main {
     padding: 30px 0px;
 }
 
+/* Flex container para a galeria, permitindo que as imagens fiquem lado a lado */
 .galeria-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
+    flex-wrap: wrap;  /* Permite que as cards se movam para a linha seguinte quando não caberem */
+    gap: 10px;        /* Espaço entre os cards */
+    padding: 20px;
 }
 
+/* Cada card individual */
 .card {
-    width: 250;
-    height: 350;
-    background-color: rgb(16, 189, 117);
+    overflow: hidden;
+    width: 250px;
+    height: 300px;
+    background-color: rgb(189, 20, 20);
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-.card img {
-
-}
-
-.card h2 {
+#marcal{
     color: white;
+    text-align: center;
+    overflow: hidden;
+    width: 250px;
+    height: 300px;
+    background-color: rgb(17, 192, 32);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Imagem dentro do card */
+.card img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;  /* Garante que a imagem seja cortada proporcionalmente */
 }
 
+/* Título e descrição do card */
+.card h2,
 .card p {
     color: white;
+    text-align: center;
+    padding: 5px;
 }
