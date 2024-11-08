@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: system-ui;
+}
+
+header {
+    height: 50px;
+    background-color: rgb(37, 35, 35);
+}
+
+nav {
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.link {
+    color: white;
+    transition: all 0.3s;
+}
+
+
+.link:hover {
+    transform: scale(1.2);
+}
+
+main {
+    padding: 30px 0px;
+}
+
+.galeria-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card {
+    width: 250;
+    height: 350;
+    background-color: rgb(16, 189, 117);
+    border-radius: 10px;
+}
+
+.card img {
+
+}
+
+.card h2 {
+    color: white;
+}
+
+.card p {
+    color: white;
+}
